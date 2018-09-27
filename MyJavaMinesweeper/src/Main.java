@@ -13,8 +13,6 @@ public class Main {
     public static void main(String[] args) {
         new Main();
     }
-
-
     private void initFrame() {
         frame.pack();
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
