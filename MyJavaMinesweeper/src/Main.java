@@ -1,5 +1,3 @@
-
-
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
@@ -29,10 +27,10 @@ public class Main {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                g.drawImage(getImage("boom"), 0, 0, this);
-                g.drawImage(getImage("bomb"), IMAGE_SIZE, 0, this);
-                g.drawImage(getImage("flag"), 0, IMAGE_SIZE, this);
-                g.drawImage(getImage("boom"), IMAGE_SIZE, IMAGE_SIZE, this);
+                g.drawImage(getImage("empty"), 0, 0, this);
+                g.drawImage(getImage("empty"), IMAGE_SIZE, 0, this);
+                g.drawImage(getImage("empty"), 0, IMAGE_SIZE, this);
+                g.drawImage(getImage("empty"), IMAGE_SIZE, IMAGE_SIZE, this);
             }
         };
 
@@ -56,7 +54,7 @@ public class Main {
         });
     }
 
-    public Image getImage(String name) {
+    private Image getImage(String name) {
         String fileName = "images/" + name + ".png";
         ImageIcon icon = new ImageIcon(getClass().getResource(fileName));
         return icon.getImage();
