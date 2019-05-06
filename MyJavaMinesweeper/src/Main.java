@@ -19,7 +19,7 @@ public class Main {
         frame.setVisible(true);
         frame.setResizable(false);
         frame.setIconImage(getImage("icon_Minesweeper"));
-        frame.setTitle("Minesweeper");
+        frame.setTitle("JavaMinesweeper");
     }
 
     private void initPanel() {
@@ -41,8 +41,6 @@ public class Main {
 
 
     }
-
-
     private Main() {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -53,7 +51,6 @@ public class Main {
             }
         });
     }
-
     private Image getImage(String name) {
         String fileName = "images/" + name + ".png";
         ImageIcon icon = new ImageIcon(getClass().getResource(fileName));
